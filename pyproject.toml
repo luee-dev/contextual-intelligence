@@ -15,6 +15,7 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "datasets",
+    "pip>=26.3",
 ]
 
 [project.optional-dependencies]
