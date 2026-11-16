@@ -42,3 +42,6 @@ models/
 # OS
 .DS_Store
 Thumbs.db
+
+reports/metrics/model_prediction_comparison.csv
+reports/metrics/misclassified_records.csv

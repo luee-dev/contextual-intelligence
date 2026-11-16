@@ -1,0 +1,13 @@
+actual_category,predicted_category,error_count
+Business,Sci/Tech,455
+Sci/Tech,Business,353
+World,Business,217
+World,Sports,180
+World,Sci/Tech,179
+Business,World,169
+Sci/Tech,World,161
+Sports,World,56
+Business,Sports,51
+Sci/Tech,Sports,45
+Sports,Sci/Tech,22
+Sports,Business,21

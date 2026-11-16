@@ -1,0 +1,36 @@
+{
+    "model": "TF-IDF + Logistic Regression",
+    "accuracy": 0.9203388415957269,
+    "macro_precision": 0.920209126272624,
+    "macro_recall": 0.92032574846999,
+    "macro_f1": 0.9201309444854379,
+    "weighted_precision": 0.9202279853342358,
+    "weighted_recall": 0.9203388415957269,
+    "weighted_f1": 0.9201468579264857,
+    "per_class": {
+        "World": {
+            "precision": 0.9335170513262142,
+            "recall": 0.9039359573048699,
+            "f1-score": 0.9184883917980003,
+            "support": 5996.0
+        },
+        "Sports": {
+            "precision": 0.9552819183408944,
+            "recall": 0.9834862385321101,
+            "f1-score": 0.9691789266047506,
+            "support": 5995.0
+        },
+        "Business": {
+            "precision": 0.8999322722654928,
+            "recall": 0.8873121869782972,
+            "f1-score": 0.8935776731674513,
+            "support": 5990.0
+        },
+        "Sci/Tech": {
+            "precision": 0.8921052631578947,
+            "recall": 0.9065686110646832,
+            "f1-score": 0.8992787863715493,
+            "support": 5983.0
+        }
+    }
+}

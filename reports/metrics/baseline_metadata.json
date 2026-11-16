@@ -1,0 +1,24 @@
+{
+    "model": "Logistic Regression",
+    "feature_extraction": "TF-IDF",
+    "ngram_range": [
+        1,
+        2
+    ],
+    "min_df": 2,
+    "max_df": 0.95,
+    "max_features": 100000,
+    "sublinear_tf": true,
+    "max_iter": 1000,
+    "random_state": 42,
+    "validation_size": 0.2,
+    "training_records": 95853,
+    "validation_records": 23964,
+    "classes": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "features_learned": 100000
+}

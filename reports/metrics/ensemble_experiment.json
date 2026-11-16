@@ -1,0 +1,35 @@
+{
+    "validation_records": 23964,
+    "experiment": "Soft-voting ensemble",
+    "results": [
+        {
+            "tfidf_weight": 0.7,
+            "embedding_weight": 0.30000000000000004,
+            "accuracy": 0.9239692872642297,
+            "macro_f1": 0.9238110731017426,
+            "weighted_f1": 0.9238272333757457
+        },
+        {
+            "tfidf_weight": 0.8,
+            "embedding_weight": 0.19999999999999996,
+            "accuracy": 0.9234685361375397,
+            "macro_f1": 0.9232989763929969,
+            "weighted_f1": 0.9233150403578073
+        },
+        {
+            "tfidf_weight": 0.9,
+            "embedding_weight": 0.09999999999999998,
+            "accuracy": 0.9224253046236021,
+            "macro_f1": 0.9222487891566344,
+            "weighted_f1": 0.9222647402852079
+        }
+    ],
+    "best_configuration": {
+        "tfidf_weight": 0.7,
+        "embedding_weight": 0.30000000000000004,
+        "accuracy": 0.9239692872642297,
+        "macro_f1": 0.9238110731017426,
+        "weighted_f1": 0.9238272333757457
+    },
+    "selection_metric": "macro_f1"
+}

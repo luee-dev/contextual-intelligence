@@ -15,6 +15,7 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "datasets",
+    "sentence-transformers",
     "pip>=26.3",
 ]
 

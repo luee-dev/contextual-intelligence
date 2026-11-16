@@ -1,0 +1,79 @@
+{
+    "model": "Logistic Regression with Sentence Embeddings",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "validation_records": 23964,
+    "accuracy": 0.8985978968452679,
+    "macro_f1": 0.8984972409323589,
+    "weighted_f1": 0.8985222080309071,
+    "classification_report": {
+        "World": {
+            "precision": 0.9137134052388289,
+            "recall": 0.8900933955970647,
+            "f1-score": 0.90174875390724,
+            "support": 5996.0
+        },
+        "Sports": {
+            "precision": 0.9620440354912915,
+            "recall": 0.9766472060050042,
+            "f1-score": 0.9692906216372816,
+            "support": 5995.0
+        },
+        "Business": {
+            "precision": 0.854720744680851,
+            "recall": 0.8584307178631052,
+            "f1-score": 0.8565717141429285,
+            "support": 5990.0
+        },
+        "Sci/Tech": {
+            "precision": 0.8636439129712672,
+            "recall": 0.8691291993982951,
+            "f1-score": 0.866377874041986,
+            "support": 5983.0
+        },
+        "accuracy": 0.8985978968452679,
+        "macro avg": {
+            "precision": 0.8985305245955597,
+            "recall": 0.8985751297158673,
+            "f1-score": 0.8984972409323589,
+            "support": 23964.0
+        },
+        "weighted avg": {
+            "precision": 0.8985577684246244,
+            "recall": 0.8985978968452679,
+            "f1-score": 0.8985222080309071,
+            "support": 23964.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            5337,
+            158,
+            305,
+            196
+        ],
+        [
+            87,
+            5855,
+            26,
+            27
+        ],
+        [
+            204,
+            46,
+            5142,
+            598
+        ],
+        [
+            213,
+            27,
+            543,
+            5200
+        ]
+    ],
+    "class_names": [
+        "World",
+        "Sports",
+        "Business",
+        "Sci/Tech"
+    ]
+}

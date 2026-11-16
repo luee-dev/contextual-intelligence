@@ -1,0 +1,12 @@
+{
+    "validation_records": 23964,
+    "tfidf_accuracy": 0.9203388415957269,
+    "embedding_accuracy": 0.8985978968452679,
+    "tfidf_macro_f1": 0.9201309444854379,
+    "embedding_macro_f1": 0.8984972409323589,
+    "prediction_agreement": 0.9260557502921049,
+    "both_correct": 20967,
+    "both_wrong": 1342,
+    "tfidf_only_correct": 1088,
+    "embedding_only_correct": 567
+}

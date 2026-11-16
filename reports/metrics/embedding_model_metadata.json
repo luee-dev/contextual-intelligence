@@ -1,0 +1,12 @@
+{
+    "model_type": "Logistic Regression",
+    "input_features": "Sentence embeddings",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dimension": 384,
+    "training_records": 95853,
+    "validation_records": 23964,
+    "validation_size": 0.2,
+    "random_state": 42,
+    "max_iter": 1000,
+    "data_source": "data/processed/ag_news_train_clean.csv"
+}
