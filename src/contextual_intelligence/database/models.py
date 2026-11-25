@@ -65,6 +65,14 @@ class ArticlePrediction(Base):
     """Stores article classification predictions from different models."""
 
     __tablename__ = "article_predictions"
+    
+    __table_args__ = (
+        UniqueConstraint(
+            "article_id",
+            "model_name",
+            name="uq_article_model_prediction",
+        ),
+    )
 
     id = Column(Integer, primary_key=True, autoincrement=True)
 
@@ -88,13 +96,6 @@ class ArticlePrediction(Base):
         server_default=func.now(),
         nullable=False,
     )
-    __table_args__ = (
-    UniqueConstraint(
-        "article_id",
-        "model_name",
-        name="uq_article_model_prediction",
-    ),
-)
 
     def __repr__(self):
         return (
@@ -102,7 +103,6 @@ class ArticlePrediction(Base):
             f"model='{self.model_name}', "
             f"category='{self.predicted_category}')>"
         )
-
 
 class Campaign(Base):
     """Stores advertising campaign configurations."""
@@ -154,6 +154,14 @@ class CampaignMatch(Base):
 
     __tablename__ = "campaign_matches"
 
+    __table_args__ = (
+        UniqueConstraint(
+            "article_id",
+            "campaign_id",
+            name="uq_article_campaign_match",
+        ),
+    )
+
     id = Column(Integer, primary_key=True, autoincrement=True)
 
     article_id = Column(
@@ -177,12 +185,15 @@ class CampaignMatch(Base):
     decision = Column(String(30), nullable=False)
 
     matched_keywords = Column(Text, nullable=True)
+    excluded_keywords_found = Column(Text, nullable=True)
+    decision_reasons = Column(Text, nullable=True)
 
     evaluated_at = Column(
         DateTime(timezone=True),
         server_default=func.now(),
         nullable=False,
     )
+
 
     def __repr__(self):
         return (

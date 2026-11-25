@@ -112,3 +112,49 @@ The initial evaluation demonstrates that the contextual matching engine can comb
 The results provide a functional validation of the implemented approach.
 
 Further evaluation using a larger, independently reviewed dataset is required before drawing conclusions about real-world matching performance.
+
+
+
+## Category Restriction Analysis
+
+### Objective
+
+Investigate whether strict campaign category targeting rejects potentially relevant articles despite strong semantic similarity.
+
+### Methodology
+
+Analysed campaign matches classified as unsuitable because the predicted article category was not included in the campaign's target categories.
+
+Identified records whose semantic relevance scores exceeded their respective campaign thresholds.
+
+### Results
+
+- Total category-blocked evaluations: 45,600.
+- Category-blocked matches above relevance thresholds: 45.
+- Potentially missed matches: approximately 0.10% of category-blocked evaluations.
+- TravelSphere recorded the highest number of above-threshold blocked matches (20).
+- TechNova recorded 10, SportEdge 7, HealthPlus 5, AutoMotion 2 and GlobalFinance 1.
+- GreenFuture and EducationFirst recorded no above-threshold blocked matches.
+
+### Qualitative Findings
+
+Some blocked matches represented credible cross-category opportunities:
+
+- Tourism articles classified as Business or Sci/Tech.
+- Electric vehicle articles classified as World.
+- Travel and hotel articles classified outside World.
+
+Other matches demonstrated that semantic similarity does not necessarily establish commercial relevance.
+
+### Decision
+
+Retain strict category targeting as the default campaign policy.
+
+Future development may introduce configurable strict and flexible category-targeting policies. Flexible targeting should require additional validation rather than relying exclusively on cosine similarity.
+
+### Limitations
+
+- The analysis uses a small set of synthetic campaign configurations.
+- AG News contains headlines and short descriptions rather than complete articles.
+- Semantic similarity is not a calibrated probability of advertising relevance.
+- The 45 matches represent potential opportunities, not confirmed suitable placements.
