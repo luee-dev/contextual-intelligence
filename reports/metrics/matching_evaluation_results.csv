@@ -1,0 +1,11 @@
+article_id,scenario,expected_campaign_id,expected_decision,actual_decision,decision_correct,top_campaign_id,top_campaign_correct,relevance_score,matched_keywords,excluded_keywords_found,expected_campaign_rank,reciprocal_rank
+ART001,strong_semantic_match,CAMP001,suitable,suitable,True,CAMP001,True,0.5288655757904053,"['smartphone', 'technology', 'artificial intelligence']",[],1,1.0
+ART002,semantic_match_different_wording,CAMP001,suitable,suitable,True,CAMP001,True,0.5932304859161377,['software'],[],1,1.0
+ART003,excluded_content,CAMP001,unsuitable,unsuitable,True,CAMP001,True,0.23256203532218933,['software'],"['cybersecurity incident', 'software vulnerability']",1,1.0
+ART004,strong_semantic_match,CAMP002,suitable,suitable,True,CAMP002,True,0.7994610071182251,"['renewable energy', 'solar power']",[],1,1.0
+ART005,semantic_match_different_wording,CAMP002,suitable,suitable,True,CAMP002,True,0.7422345280647278,['green investment'],[],1,1.0
+ART006,excluded_content,CAMP004,unsuitable,unsuitable,True,CAMP004,True,0.40194016695022583,['investment'],['money laundering'],1,1.0
+ART007,category_specific_match,CAMP003,review,review,True,CAMP003,True,0.27976691722869873,"['football', 'championship']",[],1,1.0
+ART008,cross_category_match,CAMP007,suitable,suitable,True,CAMP007,True,0.5752577781677246,['automotive'],[],1,1.0
+ART009,excluded_content,CAMP005,unsuitable,unsuitable,True,CAMP005,True,0.4635186791419983,"['travel', 'holiday', 'destination']",['terrorism'],1,1.0
+ART010,semantic_match,CAMP006,suitable,suitable,True,CAMP006,True,0.4903528094291687,['medical technology'],[],1,1.0

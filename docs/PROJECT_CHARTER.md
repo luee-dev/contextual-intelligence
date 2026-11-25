@@ -26,19 +26,46 @@ This project investigates how Natural Language Processing (NLP), machine learnin
 6. Evaluate model performance using appropriate metrics and labelled examples.
 7. Present results through an interactive analytical application.
 
-## 4. Proposed Technical Approach
 
-The project will progressively implement:
+## 4. Technical Approach and Methodology
 
-- Exploratory Data Analysis
-- Text preprocessing and feature engineering
-- TF-IDF-based classification
-- Machine learning model comparison
-- Text embeddings and semantic similarity
-- Contextual campaign ranking
-- Brand suitability rules
-- Model evaluation and error analysis
-- Data engineering and reporting pipeline
+The project follows an incremental data science and machine learning workflow.
+
+### 4.1 Data Preparation and Exploration
+- Load and inspect the AG News dataset.
+- Perform exploratory data analysis to understand article characteristics and category distributions.
+- Normalize text and address duplicate records, conflicting labels and train-test overlap.
+- Document data quality checks and preprocessing decisions.
+
+### 4.2 Article Classification
+- Develop a TF-IDF and Logistic Regression baseline classifier.
+- Generate sentence embeddings using Sentence Transformers (`all-MiniLM-L6-v2`).
+- Train and evaluate an embedding-based classifier.
+- Compare traditional lexical features with semantic representations.
+
+### 4.3 Model Evaluation and Experimentation
+- Evaluate models using accuracy, precision, recall, macro F1 and weighted F1.
+- Conduct confusion matrix analysis and qualitative error inspection.
+- Investigate disagreements between classification models.
+- Experiment with probability-based soft voting to combine model predictions.
+- Evaluate the selected ensemble on the held-out test dataset.
+
+### 4.4 Contextual Advertising and Brand Suitability
+- Create a simulated advertising campaign dataset.
+- Generate semantic representations of campaign descriptions and target keywords.
+- Calculate cosine similarity between article and campaign embeddings.
+- Rank campaigns according to semantic relevance.
+- Apply campaign eligibility rules, including category restrictions, excluded keywords and campaign status.
+- Introduce a review decision for articles that fall below campaign-specific relevance thresholds.
+
+### 4.5 Planned Data Engineering and Application Development
+- Develop a structured data pipeline for article and campaign processing.
+- Introduce PostgreSQL for storing articles, campaign configurations and matching results.
+- Explore dbt for data transformation and analytical modelling.
+- Use Apache Airflow for workflow orchestration.
+- Develop an interactive application for exploring classification results, campaign matches and brand suitability decisions.
+
+
 
 ## 5. Scope
 

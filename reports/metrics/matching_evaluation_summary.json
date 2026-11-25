@@ -1,0 +1,13 @@
+{
+    "evaluation_articles": 10,
+    "campaigns_evaluated": 8,
+    "decision_accuracy": 1.0,
+    "top_campaign_accuracy": 1.0,
+    "unsuitable_precision": 1.0,
+    "unsuitable_recall": 1.0,
+    "unsuitable_f1": 1.0,
+    "review_rate": 0.1,
+    "mean_reciprocal_rank": 1.0,
+    "correct_decisions": 10,
+    "correct_top_campaigns": 10
+}

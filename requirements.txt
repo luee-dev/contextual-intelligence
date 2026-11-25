@@ -7,3 +7,9 @@ jupyterlab
 pytest
 ruff
 datasets
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Configuration and environment variables
+python-dotenv
