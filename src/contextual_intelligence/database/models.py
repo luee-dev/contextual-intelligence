@@ -10,6 +10,7 @@ from sqlalchemy import (
     Boolean,
     Float,
     ForeignKey,
+    UniqueConstraint,
 )
 
 from contextual_intelligence.database.connection import Base
@@ -87,6 +88,13 @@ class ArticlePrediction(Base):
         server_default=func.now(),
         nullable=False,
     )
+    __table_args__ = (
+    UniqueConstraint(
+        "article_id",
+        "model_name",
+        name="uq_article_model_prediction",
+    ),
+)
 
     def __repr__(self):
         return (
